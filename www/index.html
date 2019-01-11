@@ -25,10 +25,19 @@
         <title>Hello World</title>
     </head>
     <body>
+        <input type="button" value="send" onclick="PushNo();"/>
         <script>
             document.addEventListener("deviceready", ondeviceready, false);
             function ondeviceready(){
-                alert("Device ready");
+                //alert("Device ready");
+                
+                function PushNo(){
+                    cordova.plugins.notification.local.schedule({
+                        title: 'My first notification',
+                        text: 'Thats pretty easy...',
+                        foreground: true
+                    });
+                }
             }
         </script>
         <script type="text/javascript" src="cordova.js"></script>
