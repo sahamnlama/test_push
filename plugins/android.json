@@ -13,13 +13,9 @@
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.push.test"
     },
-    "cordova-plugin-local-notification": {
-      "PACKAGE_NAME": "com.push.test"
-    }
-  },
-  "dependent_plugins": {
     "cordova-plugin-badge": {
       "PACKAGE_NAME": "com.push.test"
     }
-  }
+  },
+  "dependent_plugins": {}
 }
